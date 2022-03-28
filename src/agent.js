@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = REACT_APP_API_ROOT;
+const API_ROOT = process.env.REACT_APP_API_ROOT;
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
