@@ -1,11 +1,9 @@
-require('dotenv').config()
-
 import superagentPromise from 'superagent-promise';
 import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = process.env.API_ROOT;
+const API_ROOT = https://nodeserver1.squareops.co.in/api;
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
